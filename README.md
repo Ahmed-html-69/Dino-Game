@@ -1,42 +1,56 @@
-# Dino-Game
+# Dino Run Game
 
-Created a Google Dino game clone using oop in C++
+Dino Run is a console-based game implemented in C++. The game features a dinosaur character that can jump to avoid hurdles and accumulate points. It provides a simple and entertaining experience for users.
 
-**Introduction**
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Running the Game](#running-the-game)
+- [Gameplay](#gameplay)
+- [Code Structure](#code-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-This documentation provides an overview of the C++ code for a simple console-based Dino Run game. 
-The game includes a dinosaur character that can jump to avoid obstacles (hurdles) and accumulate points. 
-The user interacts with the game through keyboard inputs.
+## Prerequisites
+Ensure that you have a C++ compiler installed on your system to compile and run the game.
 
-Before running the Dino Run game, ensure that a C++ compiler is installed on your system. 
-The code uses standard C++ libraries and does not have external dependencies.
+## Getting Started
 
-**Code Overview**
+### Installation
+Clone the repository to your local machine using the following command:
+```bash
+git clone https://github.com/your-username/dino-run-game.git
+```
 
-**Header Files**
+### Running the Game
+1. Navigate to the project directory.
+2. Compile the source code using a C++ compiler.
+   ```bash
+   g++ dino_run_game.cpp -o DinoRunGame
+   ```
+3. Run the executable.
+   ```bash
+   ./DinoRunGame
+   ```
 
-The code includes several standard C++ header files for input/output, console manipulation, time handling, and file operations.
-These include <iostream>, <conio.h>, <time.h>, <windows.h>, <stack>, <queue>, <cstdlib>, and <fstream>.
+## Gameplay
+- Use the spacebar to make the dinosaur jump and avoid hurdles.
+- Press 'p' to pause the game.
+- Press 'Escape' to exit the game.
 
+## Code Structure
+The code is organized using a class-based approach. Here are some key components:
+- **DinoGame Class**: Manages game-related functions such as initializing the game, moving the dinosaur, drawing hurdles, and handling gameplay logic.
+- **Main Function**: Serves as the entry point for the program. It displays a menu, processes user input, and starts the game or shows instructions.
 
-**User Interface**
+## Contributing
+Contributions are welcome! If you'd like to enhance the game or fix any issues, feel free to fork the repository and submit a pull request.
 
-The user interface is text-based and displayed in the console.
-It includes a menu with options to start the game, view instructions, or quit.
-During gameplay, the dinosaur and hurdles are represented using ASCII characters.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Game Flow**
-
-The user is presented with a menu to start the game, view instructions, or quit.
-If the user chooses to start the game, a loading bar is displayed.
-The main game loop initiates, allowing the player to control the dinosaur's movement and jump to avoid hurdles.
-The game updates the score, displays it on the console, and writes it to a file.
-If the player collides with a hurdle, the game ends, and a game-over message is displayed.
-The user can choose to view instructions, which provide details on controls and gameplay.
-The user can exit the game at any time by selecting the quit option.
-
-**Conclusion**
-
-The Dino Run game provides a simple yet entertaining console-based experience.
-Players can control a dinosaur character, jump to avoid hurdles, and accumulate scores. 
-The code is structured using a oop class-based approach, making it modular and easy to understand.
+## Acknowledgements
+- Inspired by the classic Google Chrome offline dinosaur game.
+- ASCII art for the dinosaur character and hurdles.
